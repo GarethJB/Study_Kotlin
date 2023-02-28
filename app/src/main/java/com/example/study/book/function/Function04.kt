@@ -1,4 +1,4 @@
-package com.example.study.function
+package com.example.study.book.function
 
 // ◆ 매개변수 활용 ◆
 

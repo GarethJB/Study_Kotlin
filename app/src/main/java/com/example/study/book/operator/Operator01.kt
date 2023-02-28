@@ -1,4 +1,4 @@
-package com.example.study.operator
+package com.example.study.book.operator
 
 fun main() {
 

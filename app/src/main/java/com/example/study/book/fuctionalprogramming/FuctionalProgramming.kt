@@ -1,4 +1,4 @@
-package com.example.study.fuctionalprogramming
+package com.example.study.book.fuctionalprogramming
 
 /*
     ◆ 함수형 프로그래밍 ◆
@@ -57,7 +57,7 @@ fun check() {
 fun highFunc(sum: (Int, Int) -> Int, a: Int, b: Int): Int = sum(a, b)   // sum 매개변수는 함수
 
 fun main() {
-    println(highFunc({x, y -> x + y}, 10, 20))  // 람다식 함수를 인자로 넘김
+    println(highFunc({ x, y -> x + y}, 10, 20))  // 람다식 함수를 인자로 넘김
 }
 // highFunc() 함수는 sum 이라는 매개변수가 있다
 // sum 은 람다식 함수 형식으로 선언되어 있다

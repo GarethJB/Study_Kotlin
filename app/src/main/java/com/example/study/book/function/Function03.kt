@@ -1,4 +1,4 @@
-package com.example.study.function
+package com.example.study.book.function
 
 // ◆ 반환값이 없는 함수 ◆
 
