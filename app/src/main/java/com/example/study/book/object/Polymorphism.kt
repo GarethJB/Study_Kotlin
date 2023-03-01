@@ -71,5 +71,5 @@ fun main() {
 
     println("Parrot: ${parrot.name}, ${parrot.wing}, ${parrot.beak}, ${parrot.color}, ${parrot.language}")
     parrot.sing(5)  // 달라진 메소드 실행 가능
-    
+
 }
