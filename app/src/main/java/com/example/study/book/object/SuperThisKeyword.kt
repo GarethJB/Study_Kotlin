@@ -41,7 +41,6 @@ class ParrotSuper(name: String, wing: Int = 2, beak: String, color: String,
 
 
 // ▶ this 로 현재 객체 참조하기 ◀
-
 // this 와 super 를 사용하는 부 생성자
 open class Person {
     constructor(firstName: String) {
@@ -53,9 +52,29 @@ open class Person {
     }
 }
 
+class Developer: Person {
+    constructor(firstName: String): this(firstName, 10) {
+        println("[Developer] $firstName")
+    }
+    constructor(firstName: String, age: Int): super(firstName, age) {
+        println("[Developer] $firstName, $age")
+    }
+}
+
+// ▶ 주 생성자와 부 생성자 함께 사용하기 ◀
+
+
+
+
 fun main() {
+
+    // super 키워드로 상위 객체 참조
     val parrot = ParrotSuper(name = "myParrot", beak = "long", color = "blue")
     parrot.sing(3)
+
+    // this 키워드로 현재 객체 참조
+    val sean = Developer("Sean")
+
 }
 
 
