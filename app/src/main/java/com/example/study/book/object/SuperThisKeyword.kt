@@ -62,8 +62,20 @@ class Developer: Person {
 }
 
 // ▶ 주 생성자와 부 생성자 함께 사용하기 ◀
+// 주 생성자와 부 생성자가 함께 있다면 this 키워드를 사용해서 주 생성자를 가리킬 수 있다
+class PersonTogether(firstName: String, out: Unit = println("[Primary Constructor] Parameter")) {   // ② 주 생성자
 
+    val fName = println("[Property] PersonTogether fName: $firstName")  // ③ 프로퍼티 할당
 
+    init {
+        println("[init] Person init block") // ④ 초기화 블록
+    }
+
+    // ① 부 생성자
+    constructor(firstName: String, age: Int, out: Unit = println("[Secondary Constructor] Parameter")): this(firstName) {
+        println("[Secondary Constructor] Body: $firstName, $age")   // ⑤ 부 생성자 본문
+    }
+}
 
 
 fun main() {
@@ -72,9 +84,17 @@ fun main() {
     val parrot = ParrotSuper(name = "myParrot", beak = "long", color = "blue")
     parrot.sing(3)
 
+    println()
+
     // this 키워드로 현재 객체 참조
     val sean = Developer("Sean")
 
+    println()
+
+    // 주 생성자와 부 생성자 함께 사용
+    val p1 = PersonTogether("홍길동", 30)  // ① → ② 호출, ③ → ④ → ⑤ 실행
+    println()
+    val p2 = PersonTogether("심청")    // ② 호출, ③ → ④ 실행
 }
 
 
