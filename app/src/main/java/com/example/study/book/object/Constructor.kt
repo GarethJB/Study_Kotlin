@@ -2,9 +2,7 @@ package com.example.study.book.`object`
 
 
 
-/*
-
-    ◆ 생성자 ◆
+/*  ◆ 생성자 ◆
 
     생성자란 클래스를 통해 객체가 만들어질 때 기본적으로 호출되는 함수를 말한다
     외부에서 인자를 받아 초기화할 수 있도록 특별한 함수인 constructor() 를 정의한다
@@ -19,9 +17,7 @@ package com.example.study.book.`object`
 
     생성자는 주 생성자 Primary Constructor 와 부 생성자 Secondary Constructor 로 나뉘며
     필요에 따라 주 생성자 또는 부 생성자를 사용할 수 있다
-    부 생성자는 필요하면 파라미터를 다르게 여러 번 정의할 수 있다
-
-*/
+    부 생성자는 필요하면 파라미터를 다르게 여러 번 정의할 수 있다                             */
 
 // ▶ 부 생성자 ◀
 
